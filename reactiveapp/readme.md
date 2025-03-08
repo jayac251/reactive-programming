@@ -17,32 +17,14 @@ Reactive programming is a programming paradigm oriented around data flows and th
 
 ### Prerequisites
 
-- Node.js
-- npm
+-Spring boot
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
     ```sh
     git clone https://github.com/yourusername/reactive-subscriber-publisher.git
     ```
-2. Navigate to the project directory:
-    ```sh
-    cd reactive-subscriber-publisher
-    ```
-3. Install dependencies:
-    ```sh
-    npm install
-    ```
-
-### Usage
-
-1. Start the application:
-    ```sh
-    npm start
-    ```
-2. The application will run and demonstrate the reactive subscriber-publisher model.
-
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
