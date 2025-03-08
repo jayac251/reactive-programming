@@ -1,29 +1,43 @@
 package io.jc.reactive.reactiveapp.subscriber;
 
 import org.reactivestreams.Subscriber;
-
 import org.reactivestreams.Subscription;
+import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 public class SubscriberImpl implements Subscriber<String> {
 
+    private Subscription subscription;
+
+    public Subscription getSubscription() {
+        log.info("Subscriber: Getting Subscription");
+        return subscription;
+    }
+
+    public void setSubscription(Subscription subscription) {
+        log.info("Subscriber: Setting Subscription");
+        this.subscription = subscription;
+    }
+
     @Override
     public void onSubscribe(Subscription s) {
-        // Implementation goes here
+        log.info("Subscriber: OnSubscribe");
+       this.subscription = s;
+       
     }
 
     @Override
     public void onNext(String t) {
-        // Implementation goes here
+        log.info("Hello--- Recieved:{}",t);
     }
 
     @Override
     public void onError(Throwable t) {
-        // Implementation goes here
+        log.info("Hello--- Errored:{}",t);
     }
 
     @Override
     public void onComplete() {
-        // Implementation goes here
+        log.info("Hello--- Completed Subscription");
     }
 }

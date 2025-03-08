@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ReactiveappApplication<reactiveapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.jc.reactive.reactiveapp.ReactiveappApplication",
+            "projectName": "reactiveapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
