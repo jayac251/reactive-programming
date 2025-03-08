@@ -6,7 +6,7 @@ This project demonstrates a simple implementation of the Reactive Streams specif
 
 Reactive programming is a programming paradigm oriented around data flows and the propagation of change. This project showcases a basic reactive system where subscribers can subscribe to publishers to receive updates.
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## Features
 
